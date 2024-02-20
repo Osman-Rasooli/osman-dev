@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import LampContainer from "../ui/lamp";
+import LampContainer from "../../ui/lamp";
 
 export default function HeaderHeroDetail() {
   return (
