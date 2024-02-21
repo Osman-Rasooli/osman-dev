@@ -1,10 +1,11 @@
 import Hero from "./hero/Hero";
+import About from "./about/About";
 
 const Main = () => {
   return (
-    <main>
+    <main className="bg-[#020617]">
       <Hero />
-      <div className="h-screen"></div>
+      <About />
     </main>
   );
 };

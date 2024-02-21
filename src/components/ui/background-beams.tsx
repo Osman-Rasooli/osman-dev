@@ -109,7 +109,7 @@ export const BackgroundBeams = ({ className }: { className?: string }) => {
             >
               <stop stopColor="#18CCFC" stopOpacity="0"></stop>
               <stop stopColor="#18CCFC"></stop>
-              <stop offset="32.5%" stopColor="#6344F5"></stop>
+              <stop offset="32.5%" stopColor="##f"></stop>
               <stop offset="100%" stopColor="#AE48FF" stopOpacity="0"></stop>
             </motion.linearGradient>
           ))}
