@@ -10,7 +10,7 @@ const Social = () => {
       whileInView={{ opacity: 1, height: "9.5rem" }}
       viewport={{ once: true }}
       transition={{
-        delay: 0.8,
+        delay: 0.9,
         duration: 0.5,
         ease: "easeInOut",
       }}

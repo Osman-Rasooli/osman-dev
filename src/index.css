@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "GilroyBold";
+  src: url("./assets/fonts/gilroy-extrabold.otf");
+}
+
+@font-face {
+  font-family: "GilroyLight";
+  src: url("./assets/fonts/gilroy-light.otf");
+}
