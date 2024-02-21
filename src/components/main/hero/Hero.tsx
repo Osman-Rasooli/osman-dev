@@ -1,11 +1,11 @@
 import HeaderHeroDetail from "./HeaderHeroDetail";
 import { BackgroundBeams } from "../../ui/background-beams";
-import Contact from "./Contact";
+import Social from "./Social";
 const Hero = () => {
   return (
     <section className="hero relative">
       <HeaderHeroDetail />
-      <Contact />
+      <Social />
       <BackgroundBeams />
     </section>
   );

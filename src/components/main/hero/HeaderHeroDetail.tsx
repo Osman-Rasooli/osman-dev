@@ -13,7 +13,7 @@ export default function HeaderHeroDetail() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center tracking-tight text-transparent"
+        className=" bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center tracking-tight text-transparent"
       >
         <h1 className="text-4xl font-medium md:text-7xl">Osman Rasooli</h1>
         <h3 className="text-2xl">Fronend Developer | UI/UX Designer</h3>
