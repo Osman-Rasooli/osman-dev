@@ -6,6 +6,7 @@ const Main = () => {
     <main className="bg-[linear-gradient(40deg,rgb(7,15,43),rgb(27,26,85))]">
       <Hero />
       <About />
+      <div className="h-[500px]"></div>
     </main>
   );
 };

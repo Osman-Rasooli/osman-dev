@@ -28,7 +28,7 @@ const About = () => {
         <p className=" font-seaweed text-slate-400 italic">Hey there,</p>
         <p className="mt-3 text-slate-400 font-gilroyLight text-xl italic">
           I'm{" "}
-          <span className="inline-block ml-2 not-italic font-gilroyBold text-4xl text-slate-100 tracking-wider">
+          <span className="inline-block ml-2 not-italic font-gilroyBold text-4xl text-violet-600 tracking-wider">
             Osman Rasooli
           </span>
         </p>
