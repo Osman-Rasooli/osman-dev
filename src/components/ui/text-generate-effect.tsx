@@ -22,7 +22,7 @@ export const TextGenerateEffect = ({
           opacity: 1,
         },
         {
-          duration: 2,
+          duration: 1.8,
           delay: stagger(0.12),
         }
       );
@@ -34,7 +34,10 @@ export const TextGenerateEffect = ({
       <motion.div ref={scope}>
         {wordsArray.map((word, idx) => {
           return (
-            <motion.span key={word + idx} className=" text-slate-200 opacity-0">
+            <motion.span
+              key={word + idx}
+              className=" text-slate-300 opacity-0 font-gilroyLight"
+            >
               {word}{" "}
             </motion.span>
           );
@@ -46,7 +49,7 @@ export const TextGenerateEffect = ({
   return (
     <div ref={ref} className={cn("font-bold", className)}>
       <div className="mt-4">
-        <div className="text-slate-200 text-2xl leading-snug tracking-wide">
+        <div className="text-slate-300 text-lg md:text-xl  lg:text-2xl leading-relaxed tracking-wide">
           {renderWords()}
         </div>
       </div>

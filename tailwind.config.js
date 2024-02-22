@@ -10,9 +10,13 @@ module.exports = {
   content: ["./src/**/*.{ts,tsx}"],
   darkMode: "class",
   theme: {
+    borderRadius: {
+      "casual-round": "26% 74% 70% 30% / 53% 37% 63% 47% ",
+    },
     fontFamily: {
       gilroyBold: ["GilroyBold", "sans-serif"],
       gilroyLight: ["GilroyLight", "sans-serif"],
+      seaweed: ["Seaweed Script", "cursive"],
     },
     extend: {
       animation: {
