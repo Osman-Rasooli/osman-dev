@@ -5,7 +5,7 @@ import AnimatedTooltip from "../../ui/animated-tooltip";
 const Social = () => {
   return (
     <motion.div
-      className="absolute md:fixed top-0 left-5  z-50 flex flex-col gap-3"
+      className="absolute md:fixed top-0 left-5  z-100000 flex flex-col gap-3"
       initial={{ opacity: 0.2, height: "0" }}
       whileInView={{ opacity: 0.8, height: "12.5rem" }}
       viewport={{ once: true }}

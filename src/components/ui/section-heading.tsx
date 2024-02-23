@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 const SectionHeading = ({ title }: { title: string }) => {
   return (
-    <div className="flex pt-20 pb-10 md:p-0 w-full justify-start items-center gap-5 ">
+    <div className="flex pt-20 pb-10 md:p-0  justify-start items-center gap-5 max-w-[25vw]">
       <motion.div
         initial={{ opacity: 0.2, width: 0 }}
         whileInView={{ opacity: 0.8, width: "5rem" }}
