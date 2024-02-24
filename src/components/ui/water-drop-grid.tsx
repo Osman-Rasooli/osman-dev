@@ -1,4 +1,5 @@
 import anime from "animejs";
+import { useEffect, useRef } from "react";
 
 const WaterDropGrid = () => {
   return (
@@ -8,11 +9,24 @@ const WaterDropGrid = () => {
   );
 };
 
-const GRID_WIDTH = 35;
+const GRID_WIDTH = 40;
 const GRID_HEIGHT = 30;
 
 const DotGrid = () => {
-  const handleDotClick = (e) => {
+  const buttonRef = useRef<HTMLButtonElement | null>(null);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (buttonRef.current) {
+        buttonRef.current.click();
+      }
+    }, 500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  const handleDotClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+    const target = e.target as HTMLElement;
+    const dataIndex = target.dataset.index;
     anime({
       targets: ".dot-point",
       scale: [
@@ -29,7 +43,7 @@ const DotGrid = () => {
       ],
       delay: anime.stagger(100, {
         grid: [GRID_WIDTH, GRID_HEIGHT],
-        from: e.target.dataset.index,
+        from: dataIndex,
       }),
     });
   };
@@ -44,6 +58,7 @@ const DotGrid = () => {
           className="group cursor-crosshair rounded-full p-2 transition-colors hover:bg-slate-600"
           data-index={index}
           key={`${i}-${j}`}
+          ref={i === 19 && j === 10 ? buttonRef : null}
         >
           <div
             className="dot-point h-2 w-2 rounded-casual-round bg-gradient-to-b from-slate-700 to-slate-400 opacity-50 group-hover:from-indigo-600 group-hover:to-white"
