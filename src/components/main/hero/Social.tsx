@@ -1,17 +1,19 @@
 import { FaGithub, FaXTwitter, FaLinkedinIn } from "react-icons/fa6";
+import { MdOutlineAlternateEmail } from "react-icons/md";
+
 import { motion } from "framer-motion";
 import AnimatedTooltip from "../../ui/animated-tooltip";
 
 const Social = () => {
   return (
     <motion.div
-      className="absolute md:fixed top-0 left-5  z-100000 flex flex-col gap-3"
+      className="absolute md:fixed top-0 left-5  z-100000 flex flex-col"
       initial={{ opacity: 0.2, height: "0" }}
-      whileInView={{ opacity: 0.8, height: "12.5rem" }}
+      whileInView={{ opacity: 0.8, height: "10rem" }}
       viewport={{ once: true }}
       transition={{
-        delay: 0.9,
-        duration: 0.5,
+        delay: 0.4,
+        duration: 0.3,
         ease: "easeInOut",
       }}
     >
@@ -21,10 +23,10 @@ const Social = () => {
           href="https://github.com/Osman-Rasooli"
           target="_blank"
           rel="noopener noreferrer"
-          className="block text-white text-2xl"
+          className="block text-white text-2xl mb-3"
           initial={{ opacity: 0, y: 0 }}
           animate={{ opacity: 0.8, y: 10 }}
-          transition={{ duration: 0.5, delay: 1.3 }}
+          transition={{ duration: 0.5, delay: 0.8 }}
         >
           <FaGithub />
         </motion.a>
@@ -35,10 +37,10 @@ const Social = () => {
           href="https://www.linkedin.com/in/mohammad-osman-rasooli-420228192/"
           target="_blank"
           rel="noopener noreferrer"
-          className="block text-white text-2xl"
+          className="block text-white text-2xl mb-3"
           initial={{ opacity: 0, y: 0 }}
           animate={{ opacity: 0.8, y: 10 }}
-          transition={{ duration: 0.5, delay: 1.6 }}
+          transition={{ duration: 0.5, delay: 1 }}
         >
           <FaLinkedinIn />
         </motion.a>
@@ -48,12 +50,23 @@ const Social = () => {
           href="https://twitter.com/OsRasooli"
           target="_blank"
           rel="noopener noreferrer"
+          className="block text-white text-2xl mb-3"
+          initial={{ opacity: 0, y: 0 }}
+          animate={{ opacity: 0.8, y: 10 }}
+          transition={{ duration: 0.5, delay: 1.2 }}
+        >
+          <FaXTwitter />
+        </motion.a>
+      </AnimatedTooltip>
+      <AnimatedTooltip tooltipText="Mail">
+        <motion.a
+          href="mailto:moh.osmanrasooli@gmail.com"
           className="block text-white text-2xl"
           initial={{ opacity: 0, y: 0 }}
           animate={{ opacity: 0.8, y: 10 }}
-          transition={{ duration: 0.5, delay: 1.9 }}
+          transition={{ duration: 0.5, delay: 1.4 }}
         >
-          <FaXTwitter />
+          <MdOutlineAlternateEmail />
         </motion.a>
       </AnimatedTooltip>
     </motion.div>

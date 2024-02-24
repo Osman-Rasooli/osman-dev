@@ -1,18 +1,37 @@
-import HeaderHeroDetail from "./HeaderHeroDetail";
-// import { BackgroundBeams } from "../../ui/background-beams";
-import BackgroundGradientAnimation from "../../ui/background-gradient-animation";
+// import Logo from "./Logo";
+import WaterDropGrid from "../../ui/water-drop-grid";
+import TextEffect from "../../ui/text-effect";
 import Social from "./Social";
-import Logo from "./Logo";
+import Button from "../../ui/button";
 const Hero = () => {
   return (
-    <section className="hero relative h-screen">
-      <Logo />
-      {/* <HeaderHeroDetail /> */}
-      <BackgroundGradientAnimation>
-        <HeaderHeroDetail />
-      </BackgroundGradientAnimation>
+    <section className="h-screen overflow-hidden">
       <Social />
-      {/* <BackgroundBeams /> */}
+      <div className="flex flex-col md:flex-row justify-between items-center gap-20 md:gap-0 lg:gap-10 xl:gap-0">
+        <div className="flex flex-col justify-center items-center pt-[22vh] md:pt-0 md:w-1/2 lg:w-1/3">
+          <div className="pt-5 md:pl-10 md:pt-10">
+            <h4 className=" font-seaweed text-lg text-indigo-600 opacity-70 mb-5 text-left w-full">
+              hi, I'm
+            </h4>
+            <h1 className="text-left text-5xl xl:text-6xl font-gilroyBold uppercase tracking-wide leading-[2.5rem] text-slate-200">
+              <TextEffect text="Osman" />{" "}
+              <span className="block ml-10 mt-2">
+                <TextEffect text="Rasooli" />
+              </span>
+            </h1>
+            <h3 className="mt-3 text-center font-gilroyLight uppercase tracking-wide text-xl text-slate-400">
+              Fronend Developer{" "}
+              <span className="block ml-28">UI/UX Designer</span>
+            </h3>
+            <div className="mt-5">
+              <Button href="#">Let's Connect</Button>
+            </div>
+          </div>
+        </div>
+        <div className="md:w-1/2 lg:w-2/3 overflow-hidden">
+          <WaterDropGrid />
+        </div>
+      </div>
     </section>
   );
 };
