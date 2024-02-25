@@ -16,27 +16,33 @@ export const TextGenerateEffect = ({
 
   useEffect(() => {
     if (inView) {
-      animate(
-        "span",
-        {
-          opacity: 1,
-        },
-        {
-          duration: 1.8,
-          delay: stagger(0.12),
-        }
-      );
+      setTimeout(() => {
+        animate(
+          "span",
+          {
+            opacity: 1,
+          },
+          {
+            duration: 1.8,
+            delay: stagger(0.12),
+          }
+        );
+      }, 800); // Delay of 1 second (1000 milliseconds)
     }
   }, [inView]);
 
   const renderWords = () => {
+    const highlightedWords = ["Frontend", "Developer", "UI/UX", "Designer"];
     return (
       <motion.div ref={scope}>
         {wordsArray.map((word, idx) => {
           return (
             <motion.span
               key={word + idx}
-              className=" text-slate-300 opacity-0 font-gilroyLight"
+              className={`text-slate-400 opacity-0 leading-9 tracking-wider ${
+                highlightedWords.includes(word) &&
+                "text-white font-gilroyBold uppercase"
+              }`}
             >
               {word}{" "}
             </motion.span>
@@ -49,9 +55,7 @@ export const TextGenerateEffect = ({
   return (
     <div ref={ref} className={cn("font-bold", className)}>
       <div className="mt-4">
-        <div className="text-slate-300 text-lg md:text-xl  lg:text-2xl lg:w-[88%] leading-relaxed tracking-wide">
-          {renderWords()}
-        </div>
+        <div>{renderWords()}</div>
       </div>
     </div>
   );

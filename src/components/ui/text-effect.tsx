@@ -9,9 +9,16 @@ interface TextEffectProps {
 const TextEffect: React.FC<TextEffectProps> = ({ text, className = "" }) => {
   const renderedText = text
     .split("")
-    .map((char, idx) => <TextSpan key={idx}>{char}</TextSpan>);
+    .map((char, idx) => (
+      <TextSpan key={idx}>{char === " " ? whiteSpace() : char}</TextSpan>
+    ));
+  console.log(renderedText);
 
   return <div className={className}>{renderedText}</div>;
+};
+
+const whiteSpace = () => {
+  return <span>&nbsp;</span>;
 };
 
 const TextSpan: React.FC<{ children: string }> = ({ children }) => {

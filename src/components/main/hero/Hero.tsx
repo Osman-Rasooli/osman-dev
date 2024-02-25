@@ -8,14 +8,14 @@ const Hero = () => {
     <section className="h-screen overflow-hidden">
       <Social />
       <div className="flex flex-col md:flex-row justify-between items-center gap-20 md:gap-0 lg:gap-10 xl:gap-0">
-        <div className="flex flex-col justify-center items-center pt-[22vh] md:pt-0 md:w-1/2 lg:w-2/5">
-          <div className="pt-5 md:pl-10 md:pt-10">
-            <h4 className=" font-seaweed text-lg text-indigo-600 opacity-70 mb-5 text-left w-full">
+        <div className="flex flex-col justify-center items-center pt-[22vh] md:pt-0 md:w-1/2 lg:w-2/5 ">
+          <div className="pt-5 md:pl-10 md:pt-10 border-[.5px] rounded-casual-round border-slate-800">
+            <h4 className=" font-seaweed text-lg text-slate-400 opacity-70 mb-5 text-left w-full">
               hi, I'm
             </h4>
-            <h1 className="text-left text-5xl xl:text-6xl font-gilroyBold uppercase tracking-wide leading-[2.5rem] text-slate-200">
+            <h1 className="text-left text-5xl xl:text-6xl font-gilroyBold uppercase tracking-wide leading-[2.5rem] text-violet-400">
               <TextEffect text="Osman" />{" "}
-              <span className="block ml-10 mt-2">
+              <span className="block ml-10 mt-2 text-slate-200">
                 <TextEffect text="Rasooli" />
               </span>
             </h1>

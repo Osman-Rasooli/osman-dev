@@ -2,10 +2,11 @@ import { motion } from "framer-motion";
 import SectionHeading from "../../ui/section-heading";
 import { TextGenerateEffect } from "../../ui/text-generate-effect";
 import AnimatedCircleShape from "../../ui/animated-circle-shape";
+import TextEffect from "../../ui/text-effect";
 
 const About = () => {
   return (
-    <section className="about-me min-h-[500px] pt-20 pb-10 flex flex-col md:flex-row justify-center items-start gap-5 relative overflow-hidden">
+    <section className="mt-20 py-20 flex flex-col md:flex-row justify-center items-start gap-5 relative overflow-hidden">
       <AnimatedCircleShape
         deg={[-10, 16, -10]}
         duration={10}
@@ -26,20 +27,7 @@ const About = () => {
       />
 
       <SectionHeading title="About" />
-      <div className="px-8 md:px-10 md:pl-8 lg:px-16 lg:pl-12">
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 0.9, y: 0 }}
-          viewport={{ once: true }}
-          transition={{
-            delay: 0.5,
-            duration: 0.5,
-            ease: "easeInOut",
-          }}
-          className=" font-seaweed text-slate-400 italic"
-        >
-          Hey there,
-        </motion.p>
+      <div className="px-8 md:px-10 md:pl-8 lg:px-16 lg:pl-12 ">
         <motion.p
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 0.9, y: 0 }}
@@ -49,14 +37,16 @@ const About = () => {
             duration: 0.5,
             ease: "easeInOut",
           }}
-          className="mt-3 text-slate-400 font-gilroyLight text-xl italic"
+          className=" text-slate-400 font-gilroyLight text-xl"
         >
-          I'm{" "}
-          <span className="inline-block ml-2 not-italic font-gilroyBold text-4xl text-violet-600 tracking-wider">
-            Osman Rasooli
+          <span className=" font-seaweed">I'm </span>
+          <span className="inline-block ml-2 font-gilroyBold text-3xl md:text-4xl text-violet-400 tracking-wider uppercase">
+            <TextEffect text="Osman Rasooli" />{" "}
           </span>
         </motion.p>
-        <TextGenerateEffect words="A dedicated Frontend Developer and UI/UX designer with a passion for crafting seamless digital experiences. With a meticulous eye for detail and a commitment to excellence, I strive to deliver user-centric designs that not only captivate but also elevate." />
+        <div className="text-xl mt-10 md:mt-0 lg:text-2xl font-gilroyLight lg:text-justify tracking-wide leading-8 lg:mr-24 relative z-10">
+          <TextGenerateEffect words="A dedicated Frontend Developer and UI/UX Designer with a passion for crafting seamless digital experiences. With a meticulous eye for detail and a commitment to excellence, I strive to deliver user-centric designs that not only captivate but also elevate." />
+        </div>
       </div>
     </section>
   );
