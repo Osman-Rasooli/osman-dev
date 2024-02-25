@@ -1,13 +1,15 @@
 import React, { ReactNode } from "react";
 
-const Button: React.FC<{ href: string; children: ReactNode }> = ({
-  href,
-  children,
-}) => {
+const Button: React.FC<{
+  href: string;
+  children: ReactNode;
+  download?: boolean;
+}> = ({ href, children, download = false }) => {
   return (
     <a
       href={href}
       className="btn inline-block text-white p-8 relative tracking-[1px] mt-10 group"
+      download={download ? "Osman_Rasooli_Resume" : false}
     >
       <span className="btn__circle absolute top-0 left-0 h-full w-full shadow-sm shadow-white transition-all ease-linear duration-200 rounded-casual-round group-hover:scale-0"></span>
       <span className="btn__white-circle absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-casual-round scale-0 w-14 h-14 bg-white flex transition-all ease-linear duration-200  group-hover:scale-100">

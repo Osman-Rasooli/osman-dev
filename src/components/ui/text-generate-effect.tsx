@@ -23,8 +23,8 @@ export const TextGenerateEffect = ({
             opacity: 1,
           },
           {
-            duration: 1.8,
-            delay: stagger(0.12),
+            duration: 1.5,
+            delay: stagger(0.1),
           }
         );
       }, 800); // Delay of 1 second (1000 milliseconds)

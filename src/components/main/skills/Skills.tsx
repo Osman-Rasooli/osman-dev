@@ -25,9 +25,9 @@ const Skills = () => {
   const others = ["wordpress", "figma", "jest", "gulp", "git"];
 
   return (
-    <section className="md:mt-20 py-20 flex flex-col  lg:flex-row justify-start items-start  gap-5 relative">
+    <section className="md:mt-20 py-20 flex flex-col gap-5 lg:flex-row relative">
       <SectionHeading title="Skills" />
-      <div className="flex relative z-10 gap-5 flex-wrap px-8 md:mt-5">
+      <div className="flex relative z-10 gap-5 flex-wrap px-8 md:mt-5 flex-1">
         <AnimatedColumn heading="Frontend" skills={frontend} delay={0.7} />
         <AnimatedColumn heading="Backend" skills={backend} delay={1.1} />
         <AnimatedColumn heading="Other Tools" skills={others} delay={1.5} />

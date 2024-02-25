@@ -14,7 +14,7 @@ const AnimatedCircleShape = ({
     <motion.div
       animate={{ rotate: deg }}
       transition={{ duration: duration, repeat: Infinity, ease: "linear" }}
-      className={` w-96 absolute ${className} z-1000 ${color} border-[1px] rounded-casual-round text-white`}
+      className={` w-96 absolute ${className} z-1000 ${color} border-[1px] rounded-casual-round `}
     ></motion.div>
   );
 };

@@ -3,6 +3,8 @@ import SectionHeading from "../../ui/section-heading";
 import { TextGenerateEffect } from "../../ui/text-generate-effect";
 import AnimatedCircleShape from "../../ui/animated-circle-shape";
 import TextEffect from "../../ui/text-effect";
+import Button from "../../ui/button";
+import Resume from "../../../assets/OsmanRasooli.pdf";
 
 const About = () => {
   return (
@@ -11,7 +13,7 @@ const About = () => {
         deg={[-10, 16, -10]}
         duration={10}
         color="border-pink-500"
-        className="opacity-20 -left-6 -top-5 -bottom-1"
+        className="opacity-15 -left-6 -top-5 -bottom-1"
       />
       <AnimatedCircleShape
         deg={[-15, 15, -15]}
@@ -47,6 +49,16 @@ const About = () => {
         <div className="text-xl mt-10 md:mt-0 lg:text-2xl font-gilroyLight lg:text-justify tracking-wide leading-8 lg:mr-24 relative z-10">
           <TextGenerateEffect words="A dedicated Frontend Developer and UI/UX Designer with a passion for crafting seamless digital experiences. With a meticulous eye for detail and a commitment to excellence, I strive to deliver user-centric designs that not only captivate but also elevate." />
         </div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 5.2, duration: 0.5 }}
+          className=""
+        >
+          <Button href={Resume} download={true}>
+            Get Resume
+          </Button>
+        </motion.div>
       </div>
     </section>
   );

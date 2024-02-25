@@ -7,7 +7,7 @@ import AnimatedTooltip from "../../ui/animated-tooltip";
 const Social = () => {
   return (
     <motion.div
-      className="absolute md:fixed top-0 left-5  z-100000 flex flex-col"
+      className="absolute md:fixed top-0 left-5 flex flex-col z-50 bg-stone-950"
       initial={{ opacity: 0.2, height: "0" }}
       whileInView={{ opacity: 0.8, height: "10rem" }}
       viewport={{ once: true }}
@@ -17,7 +17,7 @@ const Social = () => {
         ease: "easeInOut",
       }}
     >
-      <div className="border-l-2 border-slate-400 mx-auto h-20"></div>
+      <div className="border-l-2 border-violet-400 relative mx-auto h-20"></div>
       <AnimatedTooltip tooltipText="Github">
         <motion.a
           href="https://github.com/Osman-Rasooli"
