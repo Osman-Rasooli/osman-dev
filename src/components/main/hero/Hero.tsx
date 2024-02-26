@@ -68,7 +68,7 @@ const Hero = () => {
             </motion.div>
           </div>
         </motion.div>
-        <div className="md:w-1/2 lg:w-3/5 overflow-hidden">
+        <div className="md:w-1/2 lg:w-3/5 overflow-hidden hidden md:block">
           <WaterDropGrid />
         </div>
       </div>

@@ -67,10 +67,10 @@ const Navbar = ({
               key={`link=${idx}`}
               href={navItem.link}
               className={cn(
-                "relative dark:text-neutral-50 items-center flex space-x-1 text-slate-200 font-gilroyBold  hover:text-slate-400 transition-all duration-200 px-2 py-3"
+                "relative dark:text-neutral-50 items-center flex space-x-1 text-slate-200 font-gilroyBold  hover:text-slate-400 transition-all duration-200 px-[1px] sm:px-2 py-3"
               )}
             >
-              <span className="hidden sm:inline-block mr-[2px]">
+              <span className="hidden sm:inline-block mr-[0px] sm:mr-[2px]">
                 {navItem.icon}
               </span>
               <span className=" text-sm text-[14px]">{navItem.name}</span>
