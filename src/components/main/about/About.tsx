@@ -8,28 +8,31 @@ import Resume from "../../../assets/OsmanRasooli.pdf";
 
 const About = () => {
   return (
-    <section className="mt-20 py-20 flex flex-col md:flex-row justify-center items-start gap-5 relative overflow-hidden">
+    <section
+      id="about"
+      className=" max-w-[1100px] mx-auto px-[25px] sm:px-[50px] md:px-[70px] lg:px-[100px] pt-[120px] pb-[60px] md:pt-[160px] md:pb-[80px] lg:pt-[200px] lg:pb-[100px] relative"
+    >
       <AnimatedCircleShape
         deg={[-10, 16, -10]}
         duration={10}
         color="border-pink-500"
-        className="opacity-15 -left-6 -top-5 -bottom-1"
+        className="opacity-10 -left-6 top-20 bottom-20"
       />
       <AnimatedCircleShape
         deg={[-15, 15, -15]}
         duration={8}
-        color="border-slate-50"
-        className="opacity-10 -left-5 -top-8 -bottom-5"
+        color="border-slate-200"
+        className="opacity-10 -left-5 top-16 bottom-20"
       />
       <AnimatedCircleShape
         deg={[-8, 15, -8]}
         duration={10}
-        color="border-slate-100"
-        className="opacity-10 left-2 -top-6 -bottom-2"
+        color="border-slate-300"
+        className="opacity-5 -left-5 top-16 bottom-20"
       />
 
       <SectionHeading title="About" />
-      <div className="px-8 md:px-10 md:pl-8 lg:px-16 lg:pl-12 ">
+      <div className=" ">
         <motion.p
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 0.9, y: 0 }}
@@ -42,18 +45,19 @@ const About = () => {
           className=" text-slate-400 font-gilroyLight text-xl"
         >
           <span className=" font-seaweed">I'm </span>
-          <span className="inline-block ml-2 font-gilroyBold text-3xl md:text-4xl text-violet-400 tracking-wider uppercase">
+          <span className="inline-block ml-2 font-gilroyBold text-[26px] md:text-[32px] text-violet-400 tracking-wider uppercase">
             <TextEffect text="Osman Rasooli" />{" "}
           </span>
         </motion.p>
-        <div className="text-xl mt-10 md:mt-0 lg:text-2xl font-gilroyLight lg:text-justify tracking-wide leading-8 lg:mr-24 relative z-10">
+        <div className=" font-gilroyLight lg:text-xl">
           <TextGenerateEffect words="A dedicated Frontend Developer and UI/UX Designer with a passion for crafting seamless digital experiences. With a meticulous eye for detail and a commitment to excellence, I strive to deliver user-centric designs that not only captivate but also elevate." />
         </div>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 5.2, duration: 0.5 }}
-          className=""
+          viewport={{ once: true }}
+          transition={{ delay: 4.9, duration: 0.5 }}
+          className="text-center md:text-left"
         >
           <Button href={Resume} download={true}>
             Get Resume

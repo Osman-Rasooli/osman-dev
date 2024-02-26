@@ -13,3 +13,7 @@
   font-family: "GilroyLight";
   src: url("./assets/fonts/gilroy-light.otf");
 }
+
+html {
+  scroll-behavior: smooth;
+}

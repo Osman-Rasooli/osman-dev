@@ -5,9 +5,9 @@ import Social from "./Social";
 import Button from "../../ui/button";
 const Hero = () => {
   return (
-    <section className="h-screen overflow-hidden">
+    <section id="hero" className="h-screen max-h-[1000px] overflow-hidden">
       <Social />
-      <div className="flex flex-col md:flex-row justify-between items-center gap-20 md:gap-0 lg:gap-10 xl:gap-0">
+      <div className="flex flex-col md:flex-row justify-between items-center gap-20 md:gap-0 lg:gap-10 xl:gap-0 relative z-20">
         <div className="flex flex-col justify-center items-center pt-[22vh] md:pt-0 md:w-1/2 lg:w-2/5 ">
           <div className="pt-5 md:pl-10 md:pt-10 border-[.5px] rounded-casual-round border-slate-800">
             <h4 className=" font-seaweed text-lg text-slate-400 opacity-70 mb-5 text-left w-full">

@@ -7,13 +7,13 @@ import AnimatedTooltip from "../../ui/animated-tooltip";
 const Social = () => {
   return (
     <motion.div
-      className="absolute md:fixed top-0 left-5 flex flex-col z-50 bg-stone-950"
+      className="absolute md:fixed top-0 left-5 flex flex-col z-50"
       initial={{ opacity: 0.2, height: "0" }}
-      whileInView={{ opacity: 0.8, height: "10rem" }}
+      whileInView={{ opacity: 0.8, height: "12rem" }}
       viewport={{ once: true }}
       transition={{
         delay: 0.4,
-        duration: 0.3,
+        duration: 0.5,
         ease: "easeInOut",
       }}
     >

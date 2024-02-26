@@ -1,10 +1,7 @@
 import { motion } from "framer-motion";
 const SectionHeading = ({ title }: { title: string }) => {
   return (
-    <div className="flex py-10 md:p-0  justify-start items-center gap-5 flex-shrink-0 relative z-10">
-      <div className="absolute -top-5 left-0 text-[20vh] text-zinc-900  font-seaweed opacity-30 pointer-events-none z-10">
-        {title}
-      </div>
+    <div className="flex justify-start items-center gap-5 relative z-10 overflow-hidden mt-[10px] mb-[40px]">
       <motion.div
         initial={{ opacity: 0.2, width: 0 }}
         whileInView={{ opacity: 0.8, width: "5rem" }}

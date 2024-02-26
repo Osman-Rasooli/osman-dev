@@ -25,9 +25,12 @@ const Skills = () => {
   const others = ["wordpress", "figma", "jest", "gulp", "git"];
 
   return (
-    <section className="md:mt-20 py-20 flex flex-col gap-5 lg:flex-row relative">
+    <section
+      id="skills"
+      className="relative max-w-[1100px] mx-auto px-[25px] sm:px-[50px] md:px-[70px] lg:px-[100px] py-[60px] md:py-[80px] lg:py-[100px]"
+    >
       <SectionHeading title="Skills" />
-      <div className="flex relative z-10 gap-5 flex-wrap px-8 md:mt-5 flex-1">
+      <div className="flex relative z-10 gap-10 flex-wrap md:flex-nowrap  flex-1">
         <AnimatedColumn heading="Frontend" skills={frontend} delay={0.7} />
         <AnimatedColumn heading="Backend" skills={backend} delay={1.1} />
         <AnimatedColumn heading="Other Tools" skills={others} delay={1.5} />
@@ -51,7 +54,7 @@ const AnimatedColumn = ({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: delay, duration: 0.5, ease: "easeInOut" }}
-      className="rounded-casual-round border-[1px] border-zinc-900 p-5 w-full flex-grow md:w-[320px] h-auto"
+      className="rounded-casual-round border-[1px] border-zinc-900 w-full flex-grow md:w-[320px] h-auto"
     >
       <motion.h2
         initial={{ opacity: 0, y: 20 }}

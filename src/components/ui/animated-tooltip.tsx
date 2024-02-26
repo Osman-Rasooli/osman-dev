@@ -35,11 +35,15 @@ const AnimatedTooltip = ({
                 rotate: -45,
                 translateX: -50,
               }}
-              transition={{ type: "spring", stiffness: 300, damping: 20 }}
+              transition={{
+                type: "spring",
+                stiffness: 300,
+                damping: 20,
+              }}
               style={{
                 position: "absolute",
                 bottom: "calc(100% + 5px)",
-                left: "50%",
+                left: "150%",
                 transform: "translateX(-50%)",
                 whiteSpace: "nowrap",
               }}
