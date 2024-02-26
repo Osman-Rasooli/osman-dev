@@ -57,6 +57,7 @@ const Contact = () => {
                 initial={{ opacity: 0, y: 0 }}
                 whileInView={{ opacity: 0.8, y: 10 }}
                 transition={{ duration: 0.3, delay: 1.6 }}
+                viewport={{ once: true }}
               >
                 <FaGithub />
               </motion.a>
@@ -71,6 +72,7 @@ const Contact = () => {
                 initial={{ opacity: 0, y: 0 }}
                 whileInView={{ opacity: 0.8, y: 10 }}
                 transition={{ duration: 0.3, delay: 1.8 }}
+                viewport={{ once: true }}
               >
                 <FaLinkedinIn />
               </motion.a>
@@ -84,6 +86,7 @@ const Contact = () => {
                 initial={{ opacity: 0, y: 0 }}
                 whileInView={{ opacity: 0.8, y: 10 }}
                 transition={{ duration: 0.3, delay: 2 }}
+                viewport={{ once: true }}
               >
                 <FaXTwitter />
               </motion.a>

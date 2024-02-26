@@ -32,7 +32,7 @@ const About = () => {
       />
 
       <SectionHeading title="About" />
-      <div className=" ">
+      <div className="relative z-20 ">
         <motion.p
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 0.9, y: 0 }}
@@ -42,7 +42,7 @@ const About = () => {
             duration: 0.5,
             ease: "easeInOut",
           }}
-          className=" text-slate-400 font-gilroyLight text-xl"
+          className=" text-slate-400 font-gilroyLight text-xl "
         >
           <span className=" font-seaweed">I'm </span>
           <span className="inline-block ml-2 font-gilroyBold text-[26px] md:text-[32px] text-violet-400 tracking-wider uppercase">

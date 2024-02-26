@@ -31,7 +31,6 @@ const ProjectDisplay = ({
     "innovation",
   ];
 
-  // const renderedDesc = desc.split(" ").map((word, idx) =>();
   const renderedDesc = desc.split(" ").map((word, index) => {
     const isHighlighted = highlightedWords.includes(word);
     return (
