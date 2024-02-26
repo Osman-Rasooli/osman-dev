@@ -19,7 +19,7 @@ const DotGrid = () => {
       if (buttonRef.current) {
         buttonRef.current.click();
       }
-    }, 500);
+    }, 2500);
 
     return () => clearTimeout(timer);
   }, []);

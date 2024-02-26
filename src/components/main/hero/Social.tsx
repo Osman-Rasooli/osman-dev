@@ -12,7 +12,7 @@ const Social = () => {
       whileInView={{ opacity: 0.8, height: "12rem" }}
       viewport={{ once: true }}
       transition={{
-        delay: 0.4,
+        delay: 1.5,
         duration: 0.5,
         ease: "easeInOut",
       }}
@@ -26,7 +26,7 @@ const Social = () => {
           className="block text-white text-2xl mb-3"
           initial={{ opacity: 0, y: 0 }}
           animate={{ opacity: 0.8, y: 10 }}
-          transition={{ duration: 0.5, delay: 0.8 }}
+          transition={{ duration: 0.5, delay: 1.9 }}
         >
           <FaGithub />
         </motion.a>
@@ -40,7 +40,7 @@ const Social = () => {
           className="block text-white text-2xl mb-3"
           initial={{ opacity: 0, y: 0 }}
           animate={{ opacity: 0.8, y: 10 }}
-          transition={{ duration: 0.5, delay: 1 }}
+          transition={{ duration: 0.5, delay: 2.1 }}
         >
           <FaLinkedinIn />
         </motion.a>
@@ -53,7 +53,7 @@ const Social = () => {
           className="block text-white text-2xl mb-3"
           initial={{ opacity: 0, y: 0 }}
           animate={{ opacity: 0.8, y: 10 }}
-          transition={{ duration: 0.5, delay: 1.2 }}
+          transition={{ duration: 0.5, delay: 2.3 }}
         >
           <FaXTwitter />
         </motion.a>
@@ -64,7 +64,7 @@ const Social = () => {
           className="block text-white text-2xl"
           initial={{ opacity: 0, y: 0 }}
           animate={{ opacity: 0.8, y: 10 }}
-          transition={{ duration: 0.5, delay: 1.4 }}
+          transition={{ duration: 0.5, delay: 2.5 }}
         >
           <MdOutlineAlternateEmail />
         </motion.a>
