@@ -21,7 +21,7 @@ const whiteSpace = () => {
   return <span>&nbsp;</span>;
 };
 
-const TextSpan: React.FC<{ children: string }> = ({ children }) => {
+const TextSpan: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const controls = useAnimationControls();
 
   const [isAnimating, setIsAnimating] = useState(false);

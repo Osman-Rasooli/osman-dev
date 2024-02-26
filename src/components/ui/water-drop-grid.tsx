@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import anime from "animejs";
 import { useEffect, useRef } from "react";
 
@@ -48,7 +50,7 @@ const DotGrid = () => {
     });
   };
 
-  const dots = [];
+  const dots: any[] = [];
   let index = 0;
 
   for (let i = 0; i < GRID_WIDTH; i++) {
@@ -58,7 +60,11 @@ const DotGrid = () => {
           className="group cursor-crosshair rounded-full p-2 transition-colors hover:bg-slate-600"
           data-index={index}
           key={`${i}-${j}`}
-          ref={i === 19 && j === 10 ? buttonRef : null}
+          ref={
+            i === 19 && j === 10
+              ? (buttonRef as React.RefObject<HTMLDivElement>)
+              : null
+          }
         >
           <div
             className="dot-point h-2 w-2 rounded-casual-round bg-gradient-to-b from-slate-700 to-slate-400 opacity-50 group-hover:from-indigo-600 group-hover:to-white"
