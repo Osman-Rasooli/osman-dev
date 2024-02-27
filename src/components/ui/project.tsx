@@ -19,12 +19,15 @@ const ProjectDisplay = ({
   techStack: string[];
 }) => {
   const highlightedWords = [
-    "bug tracking",
-    "project management",
+    "bug",
+    "tracking",
+    "project",
+    "management",
     "collaboration",
-    "productivity",
+    "productivity.",
     "Movies",
-    "TV Shows",
+    "TV",
+    "Shows",
     "entertainment",
     "digital",
     "logistics",

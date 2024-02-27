@@ -55,7 +55,7 @@ const Projects = () => {
           <ProjectDisplay
             img={Project2Img}
             title="MovieFlicks App"
-            desc="A web application that allows users to explore a vast collection of movies and TV shows, providing an immersive entertainment experience. "
+            desc="A web application that allows users to explore a vast collection of Movies and TV Shows - providing an immersive entertainment experience. "
             link="https://movieflicks.vercel.app/"
             codeLink="https://github.com/Osman-Rasooli/movieflicks"
             techStack={["react", "sass", "swiper", "api"]}
@@ -76,7 +76,7 @@ const Projects = () => {
           <ProjectDisplay
             img={Project3Img}
             title="Digital Logistics"
-            desc="A dynamic static website dedicated to digital logistics solutions. It embodies the forefront of digital innovation in the logistics industry."
+            desc="A dynamic website dedicated to digital logistics solutions. It embodies the forefront of digital innovation in the logistics industry."
             link="https://osman-rasooli.github.io/Digital_Logistics/"
             codeLink="https://github.com/Osman-Rasooli/Digital_Logistics"
             techStack={["javascript", "masonryJs", "rellaxJs", "animate.css"]}
