@@ -2,7 +2,7 @@
 
 Welcome to my portfolio web app! This project showcases my skills, projects, and experience in the field of web development. Explore the site to learn more about me and my work.
 
-visit the live website [osman-dev](https:www.osman-dev.com). 🔍
+visit the live website [osman-dev](https://www.osman-dev.com/). 🔍
 
 ## Table of Contents
 
