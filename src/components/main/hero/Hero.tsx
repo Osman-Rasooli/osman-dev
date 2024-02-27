@@ -64,7 +64,7 @@ const Hero = () => {
               viewport={{ once: true }}
               className="mt-5"
             >
-              <Button href="#">Let's Connect</Button>
+              <Button href="#contact">Let's Connect</Button>
             </motion.div>
           </div>
         </motion.div>

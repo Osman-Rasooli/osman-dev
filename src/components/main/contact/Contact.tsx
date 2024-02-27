@@ -45,7 +45,9 @@ const Contact = () => {
             transition={{ delay: 1.3, duration: 0.5, ease: "easeInOut" }}
             className="md:text-center pl-6  md:pl-0 md:pr-36 uppercase"
           >
-            <Button href="#">Drop me an Email</Button>
+            <Button href="mailto:moh.osmanrasooli@gmail.com">
+              Drop me an Email
+            </Button>
           </motion.div>
           <div className="mt-10 flex gap-5 justify-center ">
             <AnimatedTooltip tooltipText="Github">
